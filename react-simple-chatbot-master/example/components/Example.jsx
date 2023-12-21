@@ -2,17 +2,18 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import ChatBot from '../../lib/index';
 
-const otherFontTheme = {
-  background: '#f5f8fb',
-  fontFamily: 'Helvetica Neue',
-  headerBgColor: '#6e48aa',
-  headerFontColor: '#fff',
-  headerFontSize: '16px',
-  botBubbleColor: '#6E48AA',
-  botFontColor: '#fff',
-  userBubbleColor: '#fff',
-  userFontColor: '#4a4a4a'
-};
+const otherFontTheme =  {
+  background: '#F9F9F9',
+  fontFamily: 'Roboto, Arial, sans-serif',
+  fontSize: '10px',
+  headerBgColor: '#8F9DAA',
+  headerFontColor: '#FFFFFF',
+  headerFontSize: '12px',
+  botBubbleColor: '#6B9FCF',
+  botFontColor: '#FFFFFF',
+  userBubbleColor: '#D9DEE3',
+  userFontColor: '#333333',
+}
 
 const steps = [
   {
@@ -38,7 +39,7 @@ const ThemedExample = () => (
   <ThemeProvider theme={otherFontTheme}>
     <React.StrictMode>
       <ChatBot 
-      headerTitle="Prueba de grabación de sonido"
+      headerTitle="Ayuda en línea"
       recognitionEnable={true}
       recognitionLang='es'
       typeRecognition={1}

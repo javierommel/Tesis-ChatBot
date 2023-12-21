@@ -7,7 +7,7 @@ const Header = styled.div`
   color: ${({ theme }) => theme.headerFontColor};
   display: flex;
   fill: ${({ theme }) => theme.headerFontColor};
-  height: 56px;
+  height: 45px;
   justify-content: space-between;
   padding: 0 10px;
 `;

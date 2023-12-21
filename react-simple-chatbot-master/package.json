@@ -1,6 +1,6 @@
 {
   "name": "react-simple-chatbot-ia",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "React Simple Chatbot IA",
   "main": "dist/react-simple-chatbot-ia.js",
   "scripts": {
