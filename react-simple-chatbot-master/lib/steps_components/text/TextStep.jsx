@@ -15,11 +15,11 @@ class TextStep extends Component {
   };
 
   async componentDidMount() {
-    const { step, speak, previousValue, triggerNextStep, avatar } = this.props;
+    const { step, speak, previousValue, triggerNextStep, avatar, urlChatIa } = this.props;
     const { component, delay, waitAction, messageia } = step;
     const isComponentWatingUser = (component && waitAction);
     if (messageia) {
-      const messages = await this.getMessageIA(previousValue);
+      const messages = await this.getMessageIA(previousValue, urlChatIa);
       this.setState({ loading: false, value: messages, avataria:avatar })
     }
     setTimeout(() => {
@@ -38,9 +38,9 @@ class TextStep extends Component {
 
     return message ? message.replace(/{previousValue}/g, previousValue) : '';
   };
-  getMessageIA = async (messages) => {
+  getMessageIA = async (messages, urlChatIa) => {
     console.log("message: " + messages)
-    const respuesta = await getChat(messages);
+    const respuesta = await getChat(messages,urlChatIa);
     console.log("respuesta: " + respuesta)
     return respuesta;
   };
@@ -68,7 +68,7 @@ class TextStep extends Component {
       avatarStyle,
       bubbleStyle,
       hideBotAvatar,
-      hideUserAvatar
+      hideUserAvatar,
     } = this.props;
     const { loading, value } = this.state;
     const { avatar, user, botName } = step;
@@ -123,7 +123,8 @@ TextStep.propTypes = {
   speak: PropTypes.func,
   step: PropTypes.objectOf(PropTypes.any).isRequired,
   steps: PropTypes.objectOf(PropTypes.any),
-  triggerNextStep: PropTypes.func.isRequired
+  triggerNextStep: PropTypes.func.isRequired,
+  urlChatIa: PropTypes.string.isRequired
 };
 
 TextStep.defaultProps = {

@@ -1,10 +1,11 @@
 import 'regenerator-runtime/runtime'
-const getChat = async (mensaje) => {
+const getChat = async (mensaje, urlChatIa) => {
   const formData = new FormData();
-  formData.append('mensaje', mensaje);
+  formData.append('question', mensaje);
 
   try {
-    const response = await fetch('http://localhost:5000/chat', {
+    //const response = await fetch('http://localhost:5000/servicio1/chat', {
+    const response = await fetch(urlChatIa, {
       method: 'POST',
       body: formData,
       mode: 'cors', // Habilita CORS
