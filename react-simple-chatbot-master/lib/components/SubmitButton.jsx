@@ -6,7 +6,7 @@ const fillFunc = props => {
   const { speaking, invalid, theme } = props;
 
   if (speaking) {
-    return theme.headerBgColor;
+    return '#2E86C1';
   }
   return invalid ? '#E53935' : '#4a4a4a';
 };
@@ -30,7 +30,7 @@ const SubmitButton = styled.button`
     animation: ${({ theme, speaking }) =>
       speaking
         ? css`
-            ${pulse(theme.headerBgColor)} 2s ease infinite
+            ${pulse('#2E86C1')} 2s ease infinite
           `
         : ''};
   }

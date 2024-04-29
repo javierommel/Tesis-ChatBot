@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import defaultTheme from '../../theme';
 
-const OptionElement = styled.button`
+const ButtonMuseo = styled.button`
   background: ${({ theme }) => theme.headerBgColor};
   border: 0;
   border-radius: 10px;
@@ -9,7 +9,7 @@ const OptionElement = styled.button`
   color: ${({ theme }) => theme.botFontColor};
   display: inline-block;
   font-size: 12px;
-  padding: 12px;
+  padding: 10px;
 
   &:hover {
     opacity: 0.7;
@@ -21,8 +21,8 @@ const OptionElement = styled.button`
   }
 `;
 
-OptionElement.defaultProps = {
+ButtonMuseo.defaultProps = {
   theme: defaultTheme
 };
 
-export default OptionElement;
+export default ButtonMuseo;
