@@ -3,6 +3,7 @@ import Content from './Content';
 import Header from './Header';
 import HeaderTitle from './HeaderTitle';
 import HeaderIcon from './HeaderIcon';
+import HeaderLogo from './HeaderLogo';
 import FloatButton from './FloatButton';
 import FloatingIcon from './FloatingIcon';
 import Footer from './Footer';
@@ -19,5 +20,6 @@ export {
   FloatingIcon,
   Footer,
   Input,
-  SubmitButton
+  SubmitButton,
+  HeaderLogo
 };

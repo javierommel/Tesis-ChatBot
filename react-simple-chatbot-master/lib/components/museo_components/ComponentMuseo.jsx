@@ -16,7 +16,7 @@ export default function ComponentMuseo() {
         setModal(!modal);
     }
     return (<>
-        <ButtonMuseo onClick={toggle}>Saber mas...</ButtonMuseo>
+        <ButtonMuseo onClick={toggle}>Mostrar Historia...</ButtonMuseo>
         {modal &&
             (
                 <CustomImageViewer images={imagenes} videos={videos} textos={textos} titulo={titulo} toggle={toggle} />

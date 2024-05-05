@@ -9,20 +9,20 @@ const Bubble = styled.div`
     const { isFirst, isLast, user } = props;
 
     if (!isFirst && !isLast) {
-      return user ? '10px 0 0 10px' : '0 10px 10px 0px';
+      return user ? '5px 0 0 5px' : '0 5px 5px 0px';
     }
 
     if (!isFirst && isLast) {
-      return user ? '10px 0 10px 10px' : '0 10px 10px 10px';
+      return user ? '5px 0 5px 5px' : '0 5px 5px 5px';
     }
 
-    return props.user ? '10px 10px 0 10px' : '10px 10px 10px 0';
+    return props.user ? '5px 5px 0 5px' : '5px 5px 5px 0';
   }};
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   color: ${props => (props.user ? props.theme.userFontColor : props.theme.botFontColor)};
   display: inline-block;
   font-size: 12px;
-  max-width: 50%;
+  max-width: 70%;
   margin: ${props => {
     const { isFirst, showAvatar, user } = props;
 
@@ -38,7 +38,7 @@ const Bubble = styled.div`
   }};
   overflow: hidden;
   position: relative;
-  padding: 10px;
+  padding: 8px;
   transform: scale(0);
   transform-origin: ${props => {
     const { isFirst, user } = props;

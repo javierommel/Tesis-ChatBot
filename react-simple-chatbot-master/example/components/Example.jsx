@@ -5,22 +5,22 @@ import ComponentMuseo from '../../lib/components/museo_components/ComponentMuseo
 
 
 const otherFontTheme =  {
-  background: '#F9F9F9',
-  fontFamily: 'Roboto, Arial, sans-serif',
-  fontSize: '10px',
-  headerBgColor: '#8F9DAA',
+  background: '#ffffff',
+  fontFamily: 'Dejavu Sans, Arial, Verdana, sans-serif',
+  headerBgColor: '#3C89CF',
   headerFontColor: '#FFFFFF',
   headerFontSize: '12px',
-  botBubbleColor: '#6B9FCF',
+  botBubbleColor: '#339EFF',
   botFontColor: '#FFFFFF',
-  userBubbleColor: '#D9DEE3',
-  userFontColor: '#333333',
+  userBubbleColor: '#F2F3F4',
+  userFontColor: '#000000',
+  buttonOptionColor:'#48C9B0', 
 }
 
 const steps = [
   {
     id: '1',
-    message: 'Dime algo?',
+    message: 'Hola soy Elen, seré tu guía del museo. A continuación te muestro las opciones que tienes en esta visita virtual',
     messageia: false,
     trigger: '2',
   },
@@ -62,7 +62,7 @@ const ThemedExample = () => (
   <ThemeProvider theme={otherFontTheme}>
     <React.StrictMode>
       <ChatBot 
-      headerTitle="Ayuda en línea"
+      headerTitle="Guía Virtual del Museo"
       placeholder= 'Escriba su mensaje ...'
       recognitionPlaceholder= 'Escuchando ...'
       recognitionEnable={true}

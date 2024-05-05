@@ -8,6 +8,7 @@ const SubmitIcon = ({ size }) => (
     width={size}
     height={size}
     viewBox="0 0 500 500"
+    style={{ fill: 'white' }}
   >
     <g>
       <g>
@@ -22,7 +23,7 @@ SubmitIcon.propTypes = {
 };
 
 SubmitIcon.defaultProps = {
-  size: 20
+  size: 15
 };
 
 export default SubmitIcon;

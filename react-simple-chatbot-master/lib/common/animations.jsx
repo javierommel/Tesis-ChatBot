@@ -17,7 +17,7 @@ const invalidInput = keyframes`
 `;
 
 const pulse = color => keyframes`
-  0% { box-shadow: 0 0 0 0 ${rgba(color, 0.4)}; }
+  0% { box-shadow: 0 0 0 0 ${rgba(color, 0.5)}; }
   70% { box-shadow: 0 0 0 10px ${rgba(color, 0)}; }
   100% { box-shadow: 0 0 0 0 ${rgba(color, 0)}; }
 `;

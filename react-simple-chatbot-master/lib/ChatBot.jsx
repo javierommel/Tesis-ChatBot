@@ -14,11 +14,12 @@ import {
   FloatingIcon,
   Footer,
   Input,
-  SubmitButton
+  SubmitButton, 
+  HeaderLogo
 } from './components';
 import Recognition from './recognition';
 import VoiceRecorder from './components/VoiceRecorder';
-import { ChatIcon, CloseIcon, SubmitIcon, MicIcon } from './icons';
+import { ChatIcon, CloseIcon, SubmitIcon, MicIcon, HeaderLogoIcon } from './icons';
 import { isMobile } from './utils';
 import { speakFn } from './speechSynthesis';
 
@@ -667,6 +668,7 @@ class ChatBot extends Component {
 
     const header = headerComponent || (
       <Header className="rsc-header">
+        <HeaderLogo><HeaderLogoIcon/></HeaderLogo>
         <HeaderTitle className="rsc-header-title">{headerTitle}</HeaderTitle>
         {floating && (
           <HeaderIcon className="rsc-header-close-button" onClick={() => this.toggleChatBot(false)}>

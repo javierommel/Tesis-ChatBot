@@ -7,5 +7,6 @@ export default {
   botBubbleColor: '#6E48AA',
   botFontColor: '#fff',
   userBubbleColor: '#fff',
-  userFontColor: '#4a4a4a'
+  userFontColor: '#4a4a4a',
+  buttonOptionColor: '#f5b041',
 };
