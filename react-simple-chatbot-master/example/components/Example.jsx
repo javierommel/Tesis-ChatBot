@@ -1,7 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import ChatBot from '../../lib/index';
-import ComponentMuseo from '../../lib/components/museo_components/ComponentMuseo';
 
 
 const otherFontTheme =  {
@@ -46,15 +45,8 @@ const steps = [
     options: [
       { value: 1, label: 'Arcángel San miguel', trigger: '1' },
       { value: 2, label: 'Virgen de la Merced', trigger: '2' },
-      { value: 3, label: 'El Risco', trigger: '6' },
+      { value: 3, label: 'El Risco', trigger: '1' },
     ],
-  },
-  {
-    id: '6',
-    component: (
-      <ComponentMuseo/>
-    ),
-    trigger: '1',
   },
 ];
 
