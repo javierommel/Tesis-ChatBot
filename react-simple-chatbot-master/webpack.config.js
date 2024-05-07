@@ -27,17 +27,6 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
-      {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192, // Convertir imágenes menores a 8KB a base64 strings
-            },
-          },
-        ],
-      },
     ]
   }
 };

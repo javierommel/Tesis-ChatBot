@@ -9,7 +9,7 @@ const HeaderLogo = styled.div`
   height: 20px;
   width: 20px;
   margin: 10px;
-  margin-top:0px;
+  margin-bottom: 25px; 
 `;
 
 export default HeaderLogo;
