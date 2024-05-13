@@ -8,8 +8,8 @@ const HeaderLogo = styled.div`
   padding: 5px ;
   height: 20px;
   width: 20px;
-  margin: 10px;
-  margin-bottom: 25px; 
+  margin-left: 10px;
+  margin-bottom: 30px; 
 `;
 
 export default HeaderLogo;
